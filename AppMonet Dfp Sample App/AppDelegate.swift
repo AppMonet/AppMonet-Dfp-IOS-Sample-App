@@ -12,14 +12,14 @@ import AppMonet_Dfp
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-     var window: UIWindow?
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // AppMonet Setup
-        let appMonetConfiguration = AppMonetConfigurations .configuration { (AppMonetConfigurations) in
+        let appMonetConfiguration = AppMonetConfigurations.configuration { (AppMonetConfigurations) in
             AppMonetConfigurations?.applicationId = "<APPLICATIOND_ID>"
         }
-        AppMonet .initialize(appMonetConfiguration)
+        AppMonet.initialize(appMonetConfiguration)
         return true
     }
 }
