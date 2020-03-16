@@ -53,7 +53,7 @@ class ViewController: UIViewController, GADBannerViewDelegate, GADInterstitialDe
 
     @IBAction func loadMrect(_ sender: Any) {
         // Header Bidding - AddBids
-        AppMonet.addBids(bannerView, andDfpAdRequest: DFPRequest(), andTimeout: 4000) { (request) in
+        AppMonet.addBids(bannerView, andDfpAdRequest: DFPRequest(), andTimeout: 1500) { (request) in
             // pass the DFPReqeust object coming from block to DFPBannerView load method.
             self.bannerView.load(request)
         }
