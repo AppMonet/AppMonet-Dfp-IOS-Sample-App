@@ -11,6 +11,8 @@ import GoogleMobileAds
 import AppMonet_Dfp
 
 class ViewController: UIViewController, GADBannerViewDelegate, GADInterstitialDelegate {
+    @IBOutlet weak var mrectContainer: UIView!
+
     var bannerView: DFPBannerView!
     var interstitial: DFPInterstitial!
 
@@ -97,23 +99,7 @@ class ViewController: UIViewController, GADBannerViewDelegate, GADInterstitialDe
 
     private func addBannerViewToView(_ bannerView: DFPBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        view.addConstraints(
-                [NSLayoutConstraint(item: bannerView,
-                        attribute: .bottom,
-                        relatedBy: .equal,
-                        toItem: bottomLayoutGuide,
-                        attribute: .top,
-                        multiplier: 1,
-                        constant: 0),
-                    NSLayoutConstraint(item: bannerView,
-                            attribute: .centerX,
-                            relatedBy: .equal,
-                            toItem: view,
-                            attribute: .centerX,
-                            multiplier: 1,
-                            constant: 0)
-                ])
+        mrectContainer.addSubview(bannerView)
     }
 }
 
