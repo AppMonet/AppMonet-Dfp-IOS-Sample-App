@@ -1,4 +1,4 @@
-# AppMonet-Dfp-IOS-Sample-App
+# AppMonet GAM Sample App - iOS
 
 This project requires [Cocoapods](https://cocoapods.org/). 
 
