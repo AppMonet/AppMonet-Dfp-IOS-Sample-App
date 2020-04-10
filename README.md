@@ -6,7 +6,6 @@ This project requires [Cocoapods](https://cocoapods.org/).
 
 - Open the `Podfile` file and replace **`<API_KEY>`** with the key provided by AppMonet
 - Search, Find and Replace the following:
-  - **<APPLICATION_ID>** : Application Id generated in AppMonet's dashboard
   - **<BANNER_AD_UNIT>** : Ad Unit Id for MRECT configured in DFP's dashboard
   - **<INTERSTITIAL_AD_UNIT>** : Ad Unit Id for interstitial configured in DFP's dashboard
 - Run Pod `pod update` and `pod install`
