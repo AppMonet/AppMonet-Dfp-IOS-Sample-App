@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // AppMonet Setup
         let appMonetConfiguration = AppMonetConfigurations.configuration { (AppMonetConfigurations) in
-            AppMonetConfigurations?.applicationId = "<APPLICATIOND_ID>"
+            AppMonetConfigurations?.applicationId = "pjdfkud"
         }
         AppMonet.initialize(appMonetConfiguration)
+
+        //Use this only during testing in order to get test ads.
+        AppMonet.testMode()
         return true
     }
 }
